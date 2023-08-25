@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Bundle Selection</title>
+</head>
+
+<body>
+    <div class="bundle-container">
+        <div class="heading">
+            <div class="heading-line"></div>
+            <h2>Bundle & Save</h2>
+            <div class="heading-line"></div>
+        </div>
+
+        <div class="total-bundle">
+            <!-- First Bundle Option -->
+            <div class="bundle-option" id="bundle1-option"  >
+                <label class="label1 " id="bundle1-label"  >
+                    <input type="radio" class="radios" name="bundle" value="1"  onclick="showDetails('1')" />
+                    <span class="itempair">1 Pair</span>
+                    <span class="itemDkk">DKK 195.00</span>
+                    <span class="itemoff">50% OFF</span>
+                    <br/>
+                    <span class="most-popular" style="display:none;">MOST POPULAR</span>
+                    <br/>
+                    <br/>
+                    <span class="itemDkk discounted-price" style="display:none;">DKK <span class="discounted-amount">95.00</span></span>
+                </label>
+                <div class="f">
+                    <div class="bundle-details" id="bundle1-details">
+                        <label id="size1-label" style="display:none;" class="sizes1">Size:</label>
+                        <select id="size1" style="display:none;" class="size11">
+                            <option class="ff" value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="bundle-details">
+                        <label id="color1-label" style="display:none;" class="sizes1">Color:</label>
+                        <select id="color1" style="display:none;" class="size11">
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Bundle Option -->
+            <div class="bundle-option" id="bundle2-option" >
+                <label class="label1" id="bundle2-label"    >
+                    <input type="radio" class="radios" name="bundle" value="2"  onclick="showDetails('2')" />
+                    <span class="itempair">2 Pair</span>
+                    <span class="itemDkk">DKK 345.00</span>
+                    <span class="itemoff">40% OFF</span>
+                    <br/>
+                    <span class="most-popular" style="display:none;">MOST POPULAR</span>
+                    <br/>
+                    <br/>
+                    <span class="itemDkk discounted-price" style="display:none;">DKK <span class="discounted-amount">195.00</span></span>
+                </label>
+                <div class="f">
+                    <div class="bundle-details" id="bundle2-details">
+                        <label id="size2-label" style="display:none;" class="sizes1">Size:</label>
+                        <select id="size2" style="display:none;" class="size11">
+                            <option class="ff" value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="bundle-details">
+                        <label id="color2-label" style="display:none;" class="sizes1">Color:</label>
+                        <select id="color2" style="display:none;" class="size11">
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Bundle Option -->
+            <div class="bundle-option" id="bundle3-option"   >
+                <label class="label1" id="bundle3-label">
+                    <input type="radio" class="radios" name="bundle" value="3"  onclick="showDetails('3')"/>
+                    <span class="itempair">3 Pair</span>
+                    <span class="itemDkk">DKK 528.00</span>
+                    <span class="itemoff">60% OFF</span>
+                    <br/>
+                    <span class="most-popular" style="display:none;">MOST POPULAR</span>
+                    <br/>
+                    <br/>
+                    <span class="itemDkk discounted-price" style="display:none;">DKK <span class="discounted-amount">95.00</span></span>
+                </label>
+                <div class="f">
+                    <div class="bundle-details" id="bundle3-details">
+                        <label id="size3-label" style="display:none;" class="sizes1">Size:</label>
+                        <select id="size3" style="display:none;" class="size11">
+                            <option class="ff" value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+                    <div class="bundle-details">
+                        <label id="color3-label" style="display:none;" class="sizes1">Color:</label>
+                        <select id="color3" style="display:none;" class="size11">
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <div class="free">
+    <p class="free1">Free 2 Day Shipping</p>
+    <p class="total-price">Total: <span id="totalAmount">DKK 0.00</span></p>
+
+  </div>
+        <div class="total">
+
+             <button class="add-to-cart-btn" id="addToCartButton">+ Add to Cart</button>
+
+        </div>
+ <p class="powered-by">Powered by Pumper &copy; 2023</p>
+
+     </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
